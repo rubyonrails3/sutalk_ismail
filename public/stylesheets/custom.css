@@ -1,0 +1,311 @@
+.container{
+	width: 760px;
+}
+
+header, section, footer{
+	float: left;
+	width: 745px;
+}
+
+body{
+	background: #fff;
+}
+
+header{
+	padding-top: 0px;
+}
+
+header img{
+	padding: 0px 4px 4px 4px;
+	background: #fff;
+}
+
+section{
+	margin-top: 1em;
+	font-size: 120%;
+	/*	padding: 20px;*/
+	padding-top: 5px;
+	padding-bottom: 20px;
+	background: #fff;
+}
+
+
+/* Links */
+
+a {
+	color: #4d5c95;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #069;
+	text-decoration: underline;
+}
+
+a:visited{
+	color: #069;	
+}
+
+/*	Header  */
+
+#logo{
+	float: left;
+	width: 110px;
+	
+}	
+
+#onlineFriendsTitle{
+	color: #4d5c95;
+	line-height:1.5 !important;
+	
+}
+	
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #4d5c95;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Broadcast Button; New Friends */
+
+a.broadcast_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #006400;
+/*	border-top: 2px solid #008300; 
+	border-right: 2px solid #008300; */	
+	border-bottom: 2px solid #006400; 
+	border-left: 2px solid #006400; 
+  font-size: 150%;
+  font-weight: bold;
+  padding: 15px;
+}
+
+a.broadcast_button:active{
+	background: #008300;
+}
+
+a.new_friends_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 130px;
+  color: #fff;
+  background: #3b5998;
+  font-size: 100%;
+  padding: 6px;
+/*	border-top: 2px solid #4668b3; 
+	border-right: 2px solid #4668b3; */	
+	border-bottom: 2px solid #3b5998; 
+	border-left: 2px solid #3b5998; 
+}
+
+a.new_friends_button:active{
+	background: #4668b3;   
+}
+
+
+/*	Round corners  */
+.round{
+	-moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/*	Footer  */
+footer {
+  text-align: center;
+  margin-top: 10px;
+/*  width: 710px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+/*	Home  */
+	
+#left_column{
+	width: 160px;
+	text-align: center;
+}
+
+#home_table td{
+	background: white;
+	vertical-align:top;
+}
+
+
+/*		Instructions    */
+
+#instructions{
+	padding-top:10px;
+}
+#instructions .sectionLabel{
+	text-align:center;
+	font-weight:700;
+	margin-bottom:12px;
+}
+
+.sectionLabel{
+	padding:2px;
+	background-color: #eceff5;
+	margin-bottom:12px;
+	margin-bottom:12px;
+	line-height:1.5;
+	border-top: solid 1px #94a3c4;
+/*	font-weight: 700;*/
+	color: #000000;	
+}
+
+.instructionsPoint{
+	font-weight:700;
+}
+.smallMessage{
+	font-weight:300;
+}
+
+#instructions p, #instructions ul{
+	margin-left: 25px;
+}
+
+/* Instructions SUtalk Link */
+
+#sutalkLink2{
+	margin-top:10px;
+	width:490px;
+	border: 4px solid #3b5998;
+	background-color: #627aad;
+	margin-left:20px;
+	margin-bottom: 20px;
+}
+#sutalkLink2 input{
+	width:440px;
+	font-size:18px;
+	margin-left:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-weight:700;
+	border: 4px solid #3b5998;
+}
+
+#sutalk_link{
+	float: right;
+	width: 400px;
+	border: 4px solid #3b5998;
+	background-color: #627aad;
+	padding: 0 0.7em;
+	padding-left: 20px;
+	margin-right: 50px;
+}
+
+/*#sutalk_link_field{*/
+#sutalk_link input{
+	width:280px;
+	font-weight: 700;
+	border: 4px solid #3b5998;
+}
+
+#sutalk_link label{
+	color: #fff;
+	padding-right: 17px;
+	padding-left:10px;
+}
+
+
+/*  TokBox  */
+#publishLink, #unpublishLink{
+	display:none;
+}
+
+#unpublishLink{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 110%;
+  font-weight: bold;
+	width:55px;
+}
+
+#myCamera, #subscribersStartDiv object{
+	float:left;
+	width:264px;
+	padding: 1px;
+}
+
+
+#myCamera{
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+#instructions, #sutalkVideoBox{
+	width:540px;
+	float:left;
+}
+
+/* Friend Wall */
+
+.panel{
+	margin-top:12px;
+}
+
+.online_friend{
+	width: 50px;
+	float: left;
+	padding-right:2px;
+	font-size: 75%;
+	padding-bottom:5px;
+}
+
+#onlineFriends, #friendWall, #onlineFriendsTitle, #onlineFriendsPhotos, #friendWallTitle, #friendPhotos {
+	width: 157px;
+	float: left;
+	line-height:1;
+}
+
+#onlineFriends img:hover, #friendWall img:hover{
+	cursor:pointer;
+}
+
+

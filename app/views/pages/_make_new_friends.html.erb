@@ -1,0 +1,8 @@
+<%= form_tag url_for( :action => :newfriends ), 
+											:remote => true do	 %>
+
+	<%= hidden_field_tag 'sid', @opentok_session[:sessionId] %>
+	
+	<%= submit_tag "Make New Friends", 
+								 :class => "new_friends_button round" %>
+<% end %>

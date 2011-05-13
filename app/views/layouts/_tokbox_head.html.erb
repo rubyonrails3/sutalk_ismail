@@ -1,0 +1,19 @@
+<script src="<%= Sutalk::Application.config.opentok_api[:javascript_source] %>" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+	var opentok = eval( { session_id: '<%= @opentok_session[:sessionId] %>'} );
+
+	var apiKey = <%= @opentok_session[:apiKey] %>; 
+	var sessionId = '<%= @opentok_session[:sessionId] %>'; 
+	var token = '<%= @opentok_session[:token] %>'; // Should not be hard-coded. 
+
+	var session;
+	var publisher;
+	var subscribers = {};
+	
+	// Un-comment either of the following to set automatic logging and exception handling.
+	// See the exceptionHandler() method below.
+	// TB.setLogLevel(TB.DEBUG);
+	// TB.addEventListener("exception", exceptionHandler);
+	
+</script>

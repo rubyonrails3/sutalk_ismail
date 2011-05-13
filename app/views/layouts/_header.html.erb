@@ -1,0 +1,16 @@
+<header>
+  <%= link_to logo, root_path %>
+	<nav class="round">
+    <ul>
+      <li><%= link_to "Restart", root_path %></li>
+			<li>	
+				<%= link_to "Invite", "#", :id => "invite_link" %>  								
+			</li>
+    </ul>
+  </nav>
+  <div class="round" id="sutalk_link">
+		<label class="small_label">Link</label>		
+		<%= sutalkLink "sutalk_link_field" %>
+	</div>
+
+</header>

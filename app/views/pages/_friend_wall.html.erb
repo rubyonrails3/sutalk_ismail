@@ -1,0 +1,19 @@
+<%# image_tag "stubs/friendWall.png" %>
+
+<div id="onlineFriends" class="panel">
+		<%= link_to "Online Friends", '#', :class => "sectionLabel round", 
+														 					 :id =>  "onlineFriendsTitle" %>	
+	<div id="onlineFriendsPhotos">		
+		<%= raw( displayFriendPanel( @fb::onlineFriends, 14 )) %>		
+	</div>
+</div>
+
+
+<div id="friendWall" class="panel">
+	<div class="sectionLabel round">Friends</div>
+	<div id="friendPhotos">
+		
+		<%= raw( displayFriendPanel( @fb::friendsRandom, 5 )) %>
+		
+	</div>
+</div>

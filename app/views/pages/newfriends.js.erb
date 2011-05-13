@@ -1,0 +1,38 @@
+var apiKey = <%= @opentok_session[:apiKey] %>; 
+var sessionId = '<%= @opentok_session[:sessionId] %>'; 
+var token = '<%= @opentok_session[:token] %>'; 
+
+var oldSession = session;
+
+newFriends();
+
+function newFriends(){
+	newTokboxSessionInitialize();
+	connect();
+	$('#publishLink').hide();	
+	updatePageWithNewSession();	
+}
+
+function newTokboxSessionInitialize(){
+	session = TB.initSession( sessionId );
+	session.addEventListener("sessionConnected", newSessionConnectedHandler);
+	session.addEventListener("streamCreated", streamCreatedHandler);
+}
+
+function updatePageWithNewSession(){
+	$(".sutalkLink").val( '<%=  sutalkUrl  %>' );
+	$("#sutalk_link").effect("highlight", {}, 1500);
+	$("#sid").val('<%= @opentok_session[:sessionId] %>');
+}
+
+
+//--------------------------------------
+//  OPENTOK EVENT HANDLERS
+//--------------------------------------
+
+function newSessionConnectedHandler(event) {
+	subscribeToStreams(event.streams);
+	oldSession.cleanup();
+	publisher = null;
+	publish();
+}
